@@ -36,7 +36,7 @@ This isn’t just a coding project—it’s a mission to make communication more
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Tech                | Purpose                           |
 | ------------------- | --------------------------------- |

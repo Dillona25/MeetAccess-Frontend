@@ -1,7 +1,16 @@
+import { Cards } from "./sections/Cards";
+import { Footer } from "./sections/Footer";
+import { Hero } from "./sections/Hero";
+import { Navbar } from "./components/Navbar";
+import "./styles/main.scss";
+
 function App() {
   return (
     <>
-      <p>Hello World</p>
+      <Navbar />
+      <Hero />
+      <Cards />
+      <Footer />
     </>
   );
 }
