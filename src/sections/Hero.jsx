@@ -21,26 +21,33 @@ export const Hero = () => {
   ];
 
   return (
-    <section
-      id="hero"
-      className="hero-section position-relative overflow-hidden"
-    >
-      <div className="container">
+    <section id="hero" className="position-relative overflow-hidden">
+      <div className="container position-relative">
+        <div className="dots top-left position-absolute"></div>
+        <div className="dots bottom-right position-absolute"></div>
         <div className="row justify-content-center">
           <div className="col-12 d-flex flex-column text-center">
             <div className="d-flex justify-content-center align-items-center gap-2 bg-light rounded max-width-fit p-2 small mx-auto mb-5">
               <i class="fa-solid fa-circle-info"></i>
               Created by a HOH/Deaf individual
             </div>
-            <h1 className="d-flex flex-column mb-5">
-              Real-Time <span>Sign Language Recognition</span>
+            <h1 className="h1 d-flex flex-column mb-5">
+              Real-Time <span>ASL Alphabet Recognition</span>
             </h1>
-            <button
-              type="button"
-              class="btn btn-light py-2 px-4 max-width-fit mx-auto"
-            >
-              Demo Now
-            </button>
+            <div className="d-flex gap-3 mx-auto">
+              <button
+                type="button"
+                class="btn btn-light py-2 px-4 max-width-fit"
+              >
+                Demo Now
+              </button>
+              <button
+                type="button"
+                class="btn btn-dark py-2 px-4 max-width-fit"
+              >
+                Ultimate Goal
+              </button>
+            </div>
           </div>
         </div>
 
@@ -48,17 +55,16 @@ export const Hero = () => {
           {features.map(({ icon, title, description }, idx) => (
             <div
               key={idx}
-              className="col-12 col-md-3 card p-3 d-flex justify-content-center align-items-center"
+              className="col-12 col-md-3 d-flex flex-column align-items-center"
             >
-              <div className="d-flex">
-                <div className="mb-3 rounded-circle border-1 border-primary">
-                  <i className={`fa-solid ${icon} fa-2x text-ligh`}></i>
+              <div className="card p-3 d-flex flex-column align-items-center text-center w-100">
+                <div className="d-flex align-items-center mb-3">
+                  <i className={`fa-solid ${icon} fs-4`}></i>
                 </div>
-                <div className="d-flex flex-column ms-3">
-                  <h5 className="fw-bold">{title}</h5>
-                  <p className="text-muted mb-0">{description}</p>
-                </div>
+                <h5 className="fw-bold">{title}</h5>
+                <p className="text-muted mb-0">{description}</p>
               </div>
+              <div className="triangle-dots mt-2"></div>
             </div>
           ))}
         </div>

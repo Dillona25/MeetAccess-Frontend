@@ -18,4 +18,13 @@
     width: 60px;
     height: 60px;
   }
+
+  .triangle-dots {
+    width: 80px;
+    height: 60px;
+    background-image: radial-gradient(#000000 1.2px, transparent 0);
+    background-size: 10px 10px;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    opacity: 0.3;
+  }
 }

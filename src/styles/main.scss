@@ -1,9 +1,18 @@
 @import url("./hero.scss");
 
 section {
-  padding: 60px 0;
+  padding: 75px 0;
 }
 
 .max-width-fit {
   max-width: fit-content;
+}
+
+.timeline-bar {
+  width: 75% !important;
+  height: 5px;
+  background-color: black;
+  left: 50%;
+  top: 32px;
+  transform: translate(-50%, -50%);
 }
