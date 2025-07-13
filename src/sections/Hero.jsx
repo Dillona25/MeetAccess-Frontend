@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   const features = [
@@ -35,12 +34,13 @@ export const Hero = () => {
               Real-Time <span>ASL Alphabet Recognition</span>
             </h1>
             <div className="d-flex gap-3 mx-auto">
-              <button
+              <Link
+                to="/call"
                 type="button"
                 class="btn btn-light py-2 px-4 max-width-fit"
               >
                 Demo Now
-              </button>
+              </Link>
               <button
                 type="button"
                 class="btn btn-dark py-2 px-4 max-width-fit"

@@ -1,4 +1,5 @@
 @import url("./hero.scss");
+@import url("./webcam.scss");
 
 section {
   padding: 75px 0;
@@ -20,4 +21,8 @@ section {
 .about-image {
   height: 400px;
   width: 550px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

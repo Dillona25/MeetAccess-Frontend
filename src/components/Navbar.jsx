@@ -13,10 +13,16 @@ export const Navbar = () => {
           </ul>
         </div>
         <div className="col-4 d-flex justify-content-end align-items-center gap-4">
-          <button type="button" class="btn btn-light py-2 px-4 max-width-fit">
+          <button
+            type="button"
+            className="btn btn-light py-2 px-4 max-width-fit"
+          >
             Login
           </button>
-          <button type="button" class="btn btn-light py-2 px-4 max-width-fit">
+          <button
+            type="button"
+            className="btn btn-light py-2 px-4 max-width-fit"
+          >
             Signup
           </button>
         </div>
