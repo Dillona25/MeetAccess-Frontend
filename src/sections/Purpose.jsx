@@ -1,6 +1,6 @@
 export const Purpose = () => {
   return (
-    <section className="py-5">
+    <section className="bg-light">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-8 text-center">
@@ -18,7 +18,15 @@ export const Purpose = () => {
         </div>
 
         <div className="row text-center mt-4 position-relative">
-          <div className="timeline-bar position-absolute"></div>
+          <div
+            class="progress timeline-bar position-absolute"
+            role="progressbar"
+            aria-valuenow="0"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar w-75"></div>
+          </div>
           {[
             {
               icon: "fa-solid fa-1",

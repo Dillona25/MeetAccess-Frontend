@@ -10,9 +10,14 @@ section {
 
 .timeline-bar {
   width: 75% !important;
-  height: 5px;
+  height: 7px !important;
   background-color: black;
   left: 50%;
   top: 32px;
   transform: translate(-50%, -50%);
+}
+
+.about-image {
+  height: 400px;
+  width: 550px;
 }
